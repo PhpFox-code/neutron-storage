@@ -1,6 +1,6 @@
 {
   "name": "codelego/phpfox-storage",
-  "description": "Storage service library for phpfox framework.",
+  "description": "Storage library for phpfox framework.",
   "type": "library",
   "license": "MIT",
   "authors": [
