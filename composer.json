@@ -1,0 +1,23 @@
+{
+  "name": "codelego/phpfox-storage",
+  "description": "Storage service library for phpfox framework.",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Nam Nguyen",
+      "email": "nam.ngvan@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-4": {
+      "Phpfox\\Storage\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Phpfox\\Storage\\": "test/"
+    }
+  }
+}
