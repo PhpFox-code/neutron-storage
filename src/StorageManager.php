@@ -21,7 +21,7 @@ class StorageManager implements StorageManagerInterface
     protected $default;
 
     /**
-     * @var ServiceFactoryInterface
+     * @var StorageServiceFactoryInterface
      */
     protected $factory;
 
@@ -65,6 +65,16 @@ class StorageManager implements StorageManagerInterface
         return $this->get($id)->getUrl($name);
     }
 
+    public function cdnUrl($id, $name)
+    {
+        return $this->get($id)->cdnUrl($name);
+    }
+
+    public function url($id, $name)
+    {
+        return $this->get($id)->url($name);
+    }
+
     public function getPath($id, $name)
     {
         return $this->get($id)->getPath($name);
@@ -83,5 +93,10 @@ class StorageManager implements StorageManagerInterface
     public function deleteFile($id, $name)
     {
         return $this->get($id)->deleteFile($name);
+    }
+
+    public function __sleep()
+    {
+        return ['map', 'default', 'factory'];
     }
 }

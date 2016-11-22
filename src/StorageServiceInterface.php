@@ -12,6 +12,20 @@ interface StorageServiceInterface
     public function getUrl($name);
 
     /**
+     * @param string $name Filename
+     *
+     * @return mixed
+     */
+    public function cdnUrl($name);
+
+    /**
+     * @param string $name Filename
+     *
+     * @return mixed
+     */
+    public function url($name);
+
+    /**
      * @param string $name
      *
      * @return mixed

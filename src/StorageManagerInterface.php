@@ -7,15 +7,31 @@ interface StorageManagerInterface
      * @param string $id   Service Id
      * @param string $name Filename
      *
-     * @return mixed
+     * @return string
      */
     public function getUrl($id, $name);
+
+    /**
+     * @param string $id   Service Id
+     * @param string $name Filename
+     *
+     * @return string
+     */
+    public function cdnUrl($id, $name);
+
+    /**
+     * @param string $id   Service Id
+     * @param string $name Filename
+     *
+     * @return string
+     */
+    public function url($id, $name);
 
     /**
      * @param string $id
      * @param string $name
      *
-     * @return mixed
+     * @return string
      */
     public function getPath($id, $name);
 
