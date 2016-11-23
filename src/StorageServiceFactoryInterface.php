@@ -6,7 +6,7 @@ interface StorageServiceFactoryInterface
     /**
      * @param array $options
      *
-     * @throws StorageException
+     * @throws StorageServiceException
      */
     public function factory($options);
 }

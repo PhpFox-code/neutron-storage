@@ -28,9 +28,9 @@ class StorageManager implements StorageManagerInterface
     /**
      * StorageManager constructor.
      *
-     * @param $configs
+     * @param array $configs
      *
-     * @throws StorageException
+     * @throws StorageServiceException
      */
     public function __construct($configs)
     {

@@ -26,9 +26,26 @@ interface StorageServiceInterface
     public function url($name);
 
     /**
-     * @param string $name
+     * @param  string $name
      *
      * @return mixed
+     * @throws StorageServiceException
+     */
+    public function getObject($name);
+
+    /**
+     * @param $data
+     * @param $name
+     *
+     * @return bool
+     * @throws StorageServiceException
+     */
+    public function putObject($data, $name);
+
+    /**
+     * @param string $name
+     *
+     * @return string
      */
     public function getPath($name);
 
@@ -38,7 +55,8 @@ interface StorageServiceInterface
      * @param string $local local source filename (full path)
      * @param string $name  Relative path
      *
-     * @return mixed
+     * @return bool
+     * @throws StorageServiceException
      */
     public function putFile($local, $name);
 
@@ -46,14 +64,23 @@ interface StorageServiceInterface
      * @param string $local Local source filename (full path)
      * @param string $name
      *
-     * @return mixed
+     * @return bool
+     * @throws StorageServiceException
      */
     public function getFile($local, $name);
 
     /**
      * @param string $name Relative path
      *
-     * @return mixed
+     * @return bool
+     * @throws StorageServiceException
      */
     public function deleteFile($name);
+
+
+    /**
+     * Force disconnect, this method is very helpful when you need to release
+     * connection resource to remote service.
+     */
+    public function disconnect();
 }
