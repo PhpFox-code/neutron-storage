@@ -1,6 +1,6 @@
 <?php
 
-namespace Phpfox\Storage;
+namespace Neutron\Storage;
 
 interface StorageServiceInterface
 {

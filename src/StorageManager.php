@@ -1,6 +1,6 @@
 <?php
 
-namespace Phpfox\Storage;
+namespace Neutron\Storage;
 
 
 class StorageManager implements StorageManagerInterface

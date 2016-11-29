@@ -1,5 +1,5 @@
 <?php
-namespace Phpfox\Storage;
+namespace Neutron\Storage;
 
 return [
     'storage.drivers' => [
