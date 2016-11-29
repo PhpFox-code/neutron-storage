@@ -1,5 +1,5 @@
 {
-  "name": "codelego/phpfox-storage",
+  "name": "codelego/neutron-storage",
   "description": "Storage library for phpfox framework.",
   "type": "library",
   "license": "MIT",
